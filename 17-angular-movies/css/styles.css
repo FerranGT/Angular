@@ -1,0 +1,44 @@
+header, footer, .navbar-default {
+	background: #000;
+	color: white;
+}
+
+footer {
+	margin-top: 30px;
+	padding-top: 10px;
+}
+
+#navheader li{
+	color: #999;
+}
+
+#navheader a{
+	color: #999;
+}
+#centring{
+	text-align: center;
+}
+
+.grid{
+	display: inline-block;
+	width: 25%;
+}
+.grid img{
+	width: 95%;
+}
+.grid h3{
+	text-align: center;
+	flex-wrap: wrap;
+	color: #3872c3;
+	padding-top: 20px;
+}
+.searchbar{
+	padding-bottom: 20px;
+}
+h1{
+	padding-bottom: 30px;
+}
+
+
+
+

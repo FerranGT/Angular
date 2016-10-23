@@ -1,0 +1,34 @@
+
+<div class="container">
+<div id="centring">
+	<h1>Upcoming Movies</h1>
+  <form ng-submit="searchMoviesUpcoming($event)" action="" class="form-inline">
+    <div class="form-group searchbar">
+      <input ng-model="searchmovie" type="text" class="form-control" placeholder="Search for ..." aria-describedby="basic-addon2">
+      <button type="submit" class="btn" id="basic-addon2">Search</button>
+    </div>
+  </form>
+  <h5>{{ filteredupcomings.length }} movies were found</h5>
+  <div class="grid" ng-repeat="Upcoming in filteredupcomings = (Upcomings | filter: { title : searchmoviebutton })">
+		<h3>{{ Upcoming.title }}</h3>
+		<img src="https://image.tmdb.org/t/p/w500/{{ Upcoming.poster_path }}" alt="">
+	</div>
+</div>
+</div>
+
+
+
+
+<!-- <div class="form-group">
+    <h2>Upcoming Movies</h2>
+        <ul>
+          <li ng-repeat="Upcoming in Upcomings">{{ Upcoming.title }}</li>
+        </ul>
+</div>
+
+<div class="form-group">
+    <h2>Upcoming Movies</h2>
+        <ul>
+          <li ng-repeat="Upcoming in Upcomings"> <img ng-src="https://image.tmdb.org/t/p/w500/{{ Upcoming.poster_path}}" alt=""></li>
+        </ul>
+</div> -->

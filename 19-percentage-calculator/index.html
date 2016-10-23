@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Percentage Calculator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<style>
+		.container {
+			border:1px solid #aaa;
+			width: 75%;
+			margin-top:30px;
+			padding: 20px;
+			border-radius: 10px;
+			font-size: 1.5em;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container" ng-controller="myController1">
+
+		<section>
+
+
+			<form ng-controller="myController1" ng-submit="getnumber($event)" id="f1" action="#" class="form-inline form-group">
+				<fieldset class="row">
+					<div class="col-md-6 ">
+						<p>What is <input ng-model="number1" class="form-control" id="f1-a" type="text" size="3">% of <input ng-model="number2" class="form-control" id="f1-b" type="text" size="7">?</p>
+					</div>
+					<div class="col-md-6">
+						<button id="f1-calculate" class="form-control btn btn-primary">Calculate</button>
+						<!-- result = a / 100 * b; -->
+						<input ng-model="result" id="f1-result" class="form-control" type="text" size="7" readonly="readonly">
+						<span class="remove">%</span>
+					</div>
+					<div class="col-md-12 hide ko1">
+						<p id="helpBlock1" class="help-block">Something went wrong!!!</p>
+					</div>
+				</fieldset>
+			</form>
+
+
+			<form ng-controller="myController2" ng-submit="getnumber($event)" id="f2" action="#" class="form-inline form-group">
+				<fieldset class="row">
+					<div class="col-md-6">
+						<p><input ng-model="number3" class="form-control" id="f2-a" type="text" size="5"> is what percent of <input ng-model="number4" class="form-control" id="f2-b" type="text" size="5">?</p>
+					</div>
+					<div class="col-md-6">
+						<button id="f2-calculate" class="form-control btn btn-primary">Calculate</button>
+						<!-- result = a / b * 100; -->
+						<input ng-model="result2" id="f2-result" class="form-control" type="text" size="7" readonly="readonly">
+						<span>%</span>
+					</div>
+					<div class="col-md-12 hide ko2">
+						<p id="helpBlock1" class="help-block">Something went wrong!!!</p>
+					</div>
+				</fieldset>
+			</form>
+
+			<form ng-controller="myController3"ng-submit="getnumber($event)" id="f3" action="#" class="form-inline form-group">
+				<fieldset class="row">
+					<div class="col-md-6">
+						<p>What is the percentage increase/decrease<br>from <input ng-model="number5" class="form-control" id="f3-a" type="text" size="6"> to <input ng-model="number6" class="form-control" id="f3-b" type="text" size="6">?</p>
+					</div>
+					<div class="col-md-6">
+						<button id="f3-calculate" class="form-control btn btn-primary">Calculate</button>
+						<!-- result = (b - a) / a  * 100; -->
+						<input ng-model="result3" id="f3-result" class="form-control" type="text" size="7" readonly="readonly">
+						<span>%</span>
+					</div>
+					<div class="col-md-12 hide ko3">
+						<p id="helpBlock1" class="help-block">Something went wrong!!!</p>
+					</div>
+				</fieldset>
+			</form>
+
+			<form ng-controller="myController4" ng-submit="makereset($event)" id="f3" action="#" class="form-inline form-group">
+				<div class="col-md-6">
+						<button id="f3-calculate" class="form-control btn btn-primary">Reset!!!</button>	
+				</div>
+			</form>
+			
+
+			<p id="tips"><strong>Tips:</strong> Use tab to move to the next field. Use shift-tab to move to the previous field. Press enter to calculate.</p>
+		</section>
+
+	</div>
+
+<script src="https://opensource.keycdn.com/angularjs/1.5.8/angular.min.js "></script>
+
+	<script src="app.js"></script>
+	<script src="controller.js"></script>
+	
+
+</body>
+</html>

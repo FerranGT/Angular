@@ -1,0 +1,17 @@
+
+<div class="container">
+<div id="centring">
+	<h1>Top Rated Movies</h1>
+  <form ng-submit="searchMoviesTopRated($event)"action="" class="form-inline">
+    <div class="form-group searchbar">
+      <input ng-model="searchmovie" type="text" class="form-control" placeholder="Search for ..." aria-describedby="basic-addon2">
+      <button type="submit" class="btn" id="basic-addon2">Search</button>
+    </div>
+  </form>
+  <h5>{{ filteredtoprated.length }} movies were found</h5>
+	<div class="grid" ng-repeat="topRatedPlaying in filteredtoprated = (topRatedPlayings | filter: { title : searchmoviebutton })">
+		<h3 >{{ topRatedPlaying.title }}</h3>
+		<img src="https://image.tmdb.org/t/p/w500/{{ topRatedPlaying.poster_path }}" alt="">
+	</div>
+</div>
+</div>

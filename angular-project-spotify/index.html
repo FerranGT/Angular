@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Students Project</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+<body>
+
+	<div class="container" ng-controller="myController">
+
+		<div class="jumbotron" >
+			<div class="container">
+				<h1>{{ title }}</h1>
+				<form ng-submit="findArtists($event)" action="" method="POST" class="form-inline" role="form">
+
+					<div class="form-group">
+						<label class="sr-only" for="">label</label>
+						<input ng-model="artistQuery" type="text" class="form-control" id="" placeholder="Input artist name...">
+					</div>
+
+					<button type="submit" class="btn btn-primary">Search</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="form-group" >
+			<label for="input" class="control-label">Artists:</label>
+			<div class="col-sm-3">
+				<select ng-model="idArtist" ng-change="findAlbums()"  name="" id="input" class="form-control" required="required">
+					<option ng-repeat="artist in artists" value="{{ artist.id }}">{{ artist.name }}</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group" >
+			<label for="input" class="control-label">Albums:</label>
+			<div class="col-sm-3">
+				<select ng-model="idAlbum" ng-change="findSongs()"  name="" id="input" class="form-control" required="required">
+					<option ng-repeat="album in albums" value="{{ album.id }}|{{album.images[1].url }}">{{ album.name }}</option>
+
+				</select>
+				
+
+
+
+				<!--<p>{{ album.images[1].url }}</p>
+				 <ul>
+					<li ng-repeat="album in albums" value="{{ album.id }}"><img src="{{ album.images[0].url }}" alt=""></li>
+				</ul> -->
+
+
+			</div>
+			<img src="{{albumImg}}" alt="">
+		</div>
+
+		<div class="form-group" >
+			<label for="input" class="control-label">Songs:</label>
+			<div class="col-sm-3">
+				<ul ng-model="idSongs">
+					<li ng-repeat="song in songs" value="{{ song.id }}"> <a href="{{song.preview_url}}" target="blank">{{ song.name }}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="https://opensource.keycdn.com/angularjs/1.5.8/angular.min.js "></script>
+
+	<script src="app.js"></script>
+	<script src="controller.js"></script>
+	<script src="service.js"></script>
+
+</body>
+</html>

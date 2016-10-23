@@ -1,0 +1,20 @@
+
+<div class="container">
+  <div id="centring">
+   <h1>Popular Movies</h1>
+    <form ng-submit="searchMoviesPopular($event)" action="" class="form-inline">
+    <div class="form-group searchbar">
+      <input ng-model="searchmovie" type="text" class="form-control" placeholder="Search for ..." aria-describedby="basic-addon2">
+      <button type="submit" class="btn" id="basic-addon2">Search</button>
+    </div>
+  </form>
+  <h5>{{ filteredpopulars.length }} movies were found</h5>
+   <!-- <div class="grid" ng-repeat="Popular in Populars | filter: { title : searchmoviebutton }"> -->
+   <div class="grid" ng-repeat="Popular in filteredpopulars = (Populars | filter: { title : searchmoviebutton })">
+    <h3>{{ Popular.title }}</h3>
+    <img src="https://image.tmdb.org/t/p/w500/{{ Popular.poster_path }}" alt="">
+  </div>
+</div>
+</div>
+
+

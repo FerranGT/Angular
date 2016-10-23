@@ -1,0 +1,35 @@
+
+<div class="container">
+<div id="centring">
+	<h1>Now Playing Movies</h1>
+   <form ng-submit="searchMoviesNowPlaying($event)" action="" class="form-inline">
+    <div class="form-group searchbar">
+      <input ng-model="searchmovie" type="text" class="form-control" placeholder="Search for ..." aria-describedby="basic-addon2">
+      <button type="submit" class="btn" id="basic-addon2">Search</button>
+    </div>
+  </form>
+   <h5>{{ filterednowplayings.length }} movies were found</h5>
+  <div class="grid" ng-repeat="NowPlaying  in filterednowplayings = (NowPlayings | filter: { title : searchmoviebutton })">
+		<h3 >{{ NowPlaying.title }}</h3>
+		<img src="https://image.tmdb.org/t/p/w500/{{ NowPlaying.poster_path }}" alt="">
+	</div>
+</div>
+</div>
+
+
+
+
+
+<!-- <div class="form-group">
+    <h2>Now Playing</h2>
+        <ul>
+          <li ng-repeat="NowPlaying in NowPlayings">{{ NowPlaying.title }}</li>
+        </ul>
+</div>
+
+<div class="form-group">
+    <h2>Now Playing</h2>
+        <ul>
+          <li ng-repeat="NowPlaying in NowPlayings"> <img ng-src="https://image.tmdb.org/t/p/w500/{{ NowPlaying.poster_path}}" alt=""></li>
+        </ul>
+</div> -->
