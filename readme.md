@@ -10,8 +10,8 @@ These Angular are:
 
 * [angular-demo-app](https://github.com/FerranGT/Angular/tree/master/angular-demo-app)
 
-* [16-clock-timezone](https://github.com/FerranGT/Angular/tree/master/17-angular-movies)
+* [angular-project-spotify](https://github.com/FerranGT/Angular/tree/master/17-angular-movies)
 
-* [18-beers-app](https://github.com/FerranGT/Angular/tree/master/17-angular-movies)
+* [demo-routes-angular](https://github.com/FerranGT/Angular/tree/master/17-angular-movies)
 
 * [demo-ajax-jquery](https://github.com/FerranGT/Angular/tree/master/17-angular-movies)
