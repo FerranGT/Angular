@@ -1,17 +1,17 @@
-## JSON & AJAX Skylab Coders
+## Angular Skylab Coders
 
-This repo contains some JSON & AJAX exercices done during the bootcamp Skylab Coders Autumn 2016.
+This repo contains some Angular exercices done during the bootcamp Skylab Coders Autumn 2016.
 
-These JSON & AJAX are:
+These Angular are:
 
-* [04-jquery-spotify-API](https://github.com/FerranGT/JSON-AJAX/tree/master/04-jquery-spotify-API)
+* [17-angular-movies](https://github.com/FerranGT/Angular/tree/master/17-angular-movies)
 
-* [05-youtube-json](https://github.com/FerranGT/JSON-AJAX/tree/master/05-youtube-json)
+* [19-percentage-calculator](https://github.com/FerranGT/Angular/tree/master/19-percentage-calculator)
 
-* [14-random-user](https://github.com/FerranGT/JSON-AJAX/tree/master/14-random-user)
+* [angular-demo-app](https://github.com/FerranGT/Angular/tree/master/angular-demo-app)
 
-* [16-clock-timezone](https://github.com/FerranGT/JSON-AJAX/tree/master/16-clock-timezone)
+* [16-clock-timezone](https://github.com/FerranGT/Angular/tree/master/17-angular-movies)
 
-* [18-beers-app](https://github.com/FerranGT/JSON-AJAX/tree/master/18-beers-app)
+* [18-beers-app](https://github.com/FerranGT/Angular/tree/master/17-angular-movies)
 
-* [demo-ajax-jquery](https://github.com/FerranGT/JSON-AJAX/tree/master/demo-ajax-jquery)
+* [demo-ajax-jquery](https://github.com/FerranGT/Angular/tree/master/17-angular-movies)
