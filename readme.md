@@ -10,8 +10,8 @@ These Angular are:
 
 * [angular-demo-app](https://github.com/FerranGT/Angular/tree/master/angular-demo-app)
 
-* [angular-project-spotify](https://github.com/FerranGT/Angular/tree/master/17-angular-movies)
+* [angular-project-spotify](https://github.com/FerranGT/Angular/tree/master/angular-project-spotify)
 
-* [demo-routes-angular](https://github.com/FerranGT/Angular/tree/master/17-angular-movies)
+* [demo-routes-angular](https://github.com/FerranGT/Angular/tree/master/demo-routes-angular)
 
-* [demo-ajax-jquery](https://github.com/FerranGT/Angular/tree/master/17-angular-movies)
+* [todos-app](https://github.com/FerranGT/Angular/tree/master/todos-app)
